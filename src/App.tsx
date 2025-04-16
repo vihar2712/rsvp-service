@@ -8,8 +8,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<h1>Hello</h1>}/>
-      <Route path='/rsvp-service' element={<RsvpService/>}/>
+      <Route path='/' element={<RsvpService/>}/>
       <Route path='/update-status/:playerId' element={<Form label="Edit"/>}/>
       <Route path='/add-player' element={<Form label="Add"/>}/>
       <Route path='/stats' element={<Stats/>}/>
