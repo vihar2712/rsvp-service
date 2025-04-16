@@ -32,7 +32,7 @@ export function Form({label}:FormProps){
                 <form className="flex flex-col gap-3 mt-5" onSubmit={(e)=> {
                     e.preventDefault();
                     if(label=="Edit"){
-                       updateStatus(playerId,status);
+                       updateStatus(playerId,status,playerName);
                     }
                     else{
                         addPlayer(playerName,status,list);   
