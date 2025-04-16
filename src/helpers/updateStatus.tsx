@@ -1,7 +1,6 @@
 import { Player } from "./addPlayer";
 
 export function updateStatus(id:string | undefined, newStatus:string){
-    console.log(newStatus,id);
     let listOfPlayers:Player[] = JSON.parse(localStorage.getItem("players")!);
 
     const index = listOfPlayers.findIndex((player: Player) => id === player.id);

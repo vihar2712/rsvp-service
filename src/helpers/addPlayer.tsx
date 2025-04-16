@@ -6,7 +6,6 @@ export type Player = {
     status:string
 }
 export function addPlayer(name:string, status:string, listOfPlayers:Player[]){
-    // console.log(name, status, listOfPlayers);
     const newPlayer:Player = {
         id: uuidv4(), name, status
     }
